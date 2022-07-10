@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adding favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.jpg">
+    <!-- External styling -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Oswald font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Ubuntu font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Font awesome kit for icons -->
+    <script src="https://kit.fontawesome.com/71eeca1519.js" crossorigin="anonymous"></script>
+    <title>Sudoku</title>
+</head>
+
+<body>
+    <div class="opening-page-container"><!-- Opening page and name input -->
+        <div class="opening-page-content flex-container">
+            <h1 class="opening-page-title">Sudoku</h1>
+            <input type="text" placeholder="Enter your name" id="name-input" class="login-input">
+            <button id="submit-name-btn" type="submit">Continue</button>
+            <div class="best-score-container">
+                <h2 class="best-score-title">Current Best 👑</h2>
+                <h3 class="best-score-name-title">Name: <span class="best-score-name"></span></h3>
+                <h3 class="best-score-time-title">Time: <span class="best-score-time"></span></h3>
+            </div>
+            <div class="made-by-container">
+                <p class="made-by">Made by Idan Cohen</p>
+            </div>
+        </div>
+    </div><!-- Opening page and name input -->
+
+    <div class="main-container">
+        <div class="login-container flex-container"><!-- Login section container -->
+            <h1 class="login-title">Sudoku</h1>
+            <div class="login-form-container flex-container">
+                <label for="user-input" class="login-label">Username:</label>
+                <input type="text" class="login-input" id="user-input" placeholder="Enter your username" required>
+                <label for="password-input" class="login-label">Password:</label>
+                <input type="password" class="login-input" id="password-input" placeholder="Enter your password"
+                    required>
+            </div>
+            <button class="enter-btn">Enter</button>
+            <div class="error-message-container"><!-- Error Message div -->
+                <p class="error-message">* You've entered incorrect username or password.<br>Please try again.</p>
+            </div> <!-- Error Message div -->
+        </div> <!-- Login section container -->
+
+        <div class="difficulty-selection-container flex-container">
+            <!-- Choose difficulty screen container -->
+            <h1 class="welcome-title">Welcome <span class="welcome-title-name"></span></h1>
+            <h2 class="difficulty-selection-title">Select difficulty:</h2>
+            <div class="difficulty-options-container flex-container">
+                <!-- Difficulty buttons container -->
+                <button class="difficulty-option" value="easy">Easy 👶</button>
+                <button class="difficulty-option" value="normal">Normal 🤠</button>
+                <button class="difficulty-option" value="hard">Hard 😈</button>
+            </div> <!-- Difficulty buttons container -->
+        </div> <!-- Choose difficulty screen container -->
+        <div class="loading"></div> <!-- Loading animation while interacting with the API -->
+        <div class="game-screen-container flex-container">
+            <!-- The whole game section -->
+            <div class="game-container"></div> <!-- This div will hold the game grid -->
+            <div class="mobile-numbers-container"></div>
+            <!-- This container will hold the numbers for mobile version -->
+            <div class="game-buttons-container flex-container">
+                <button class="again-btn">Restart</button>
+                <p class="timer">Time: <span class="timer-time">0</span></p>
+                <button class="finish-btn">Finish</button>
+            </div>
+
+            <i class='fas return-arrow'>&#xf061;</i>
+            <p class="mistakes-message">You have <span class="mistakes-number"></span> mistakes</p>
+            <!-- Will show up when pressing finish and there are mistakes -->
+        </div> <!-- The whole game section -->
+
+        <!-- Additional sections -->
+
+        <div class="settings-container">
+            <!-- Audio and night mode buttons container -->
+            <i style='font-size:24px' class='fas audio-btn'>&#xf6a9;</i>
+            <i style='font-size:24px' class='fas night-mode-btn'>&#xf186;</i>
+        </div> <!-- Audio and night mode buttons container -->
+
+        <div class="again-message-container pop-up">
+            <!-- Again button pop up -->
+            <h3 class="again-title">Are you sure you want to refresh?</h3>
+            <div class="again-buttons-container">
+                <button class="yes-btn" value="yes">Yes</button>
+                <button class="no-btn" value="no">No</button>
+            </div>
+        </div> <!-- Again button pop up -->
+
+        <div class="finish-message-container pop-up">
+            <!-- Finished game pop up -->
+            <h3 class="finish-title">CONGRATULATIONS! 🎉</h3>
+            <p class="finish-message">You've finished the game in <span class="finish-time"></span> seconds!</p>
+            <p class="finish-message">Do you want to play a new game?</p>
+            <button class="try-again-btn">Try Again!</button>
+        </div> <!-- Finished game pop up -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

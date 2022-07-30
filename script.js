@@ -42,6 +42,7 @@ let time = 0;
 let timerId;
 const mistakesMessage = document.querySelector(".mistakes-message");
 const mistakesNumber = document.querySelector(".mistakes-number");
+const apiKey = config.apiKey;
 
 // Additional variables
 
@@ -193,7 +194,7 @@ async function startGame() {
       headers: {
         // Making the proper headers required
         "x-rapidapi-host": "sudoku-board.p.rapidapi.com",
-        "x-rapidapi-key": config.API_KEY,
+        "x-rapidapi-key": apiKey,
       },
     };
     const res = await axios.get(

@@ -4,26 +4,26 @@ This sudoku project was made as part of a Full-Stack web development course i at
 
 Technologies used: Javascript, HTML, CSS, Axios, Fetch API.
 
-Landing page: 
+**Landing page**: 
 
 ![landingPage](https://user-images.githubusercontent.com/97622278/181904705-3ad02ca9-56eb-42f4-9fa1-848bc456b6ee.png)
 
 In the landing page you need to enter your name in order to interact with the "Current Best" feature which save the player's name and time in the "localStorage" and displayes the fastest player on a particular client.
 
-Login page: 
+**Login page**: 
 
 
 ![loginPage](https://user-images.githubusercontent.com/97622278/181904771-1ba6d6db-e3fc-4068-a9e6-b4d6e005a1ed.png)
 
 In order to play the game a user need to enter the username "abcd" and "1234" for the password.
 
-Difficulty selection: 
+**Difficulty selection**: 
 
 ![difficultySelection](https://user-images.githubusercontent.com/97622278/181904807-06231c7f-c8c6-406e-a196-34e5a5e106a5.png)
 
 In the difficulty selection a user can choose between 3 levels of difficulty each determains an amount of blank squares in the game and hence increases the difficulty.
 
-Game screen: 
+**Game screen**: 
 
 ![gameScreen](https://user-images.githubusercontent.com/97622278/181904856-17e40ab3-aeaa-4e38-8032-5269af979267.png)
 
@@ -55,13 +55,13 @@ The "Reset" button opens a modal which ask the user either to refresh and clean 
 
 ![resetFeature](https://user-images.githubusercontent.com/97622278/181905266-06aea5f8-2027-4533-8e13-097b34e3448c.png)
 
-Extra features: 
+**Extra features**: 
 
 The game has full support of a dark mode and a nice calm music to listen to while playing. 
 
 ![darkModeArrows](https://user-images.githubusercontent.com/97622278/181905308-ea577600-b2c1-42b6-8b82-11c0803b4bfc.png)
 
-Notes: 
+**Notes**: 
 
 The game is fully responsive and works on every screen size.
 
